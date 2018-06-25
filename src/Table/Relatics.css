@@ -1,0 +1,1084 @@
+﻿.Page {
+    padding: 5px 5px 0px 5px;
+}
+
+.BuildingBlock, .BuildingBlockTextFragment {
+    width: 100%;
+    font-family: Tahoma;
+    font-size: 8pt;
+    margin-bottom: 16px;
+}
+
+    .FrozenHeader,
+    .BuildingBlock.FrozenHeader {
+        margin: 0;
+        padding: 0;
+        position: fixed;
+        top: 0;
+        z-index: 8000;
+    }
+
+.BuildingBlockTextFragment {
+    margin-bottom: 0px;
+}
+
+.BuildingBlockHeader {
+    height: 20px;
+    background-color: #C0C0C0;
+    border: 1px double #C0C0C0;
+    padding: 2px 4px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.BuildingBlockErrorMessage {
+    font-family: 'Open Sans', Tahoma;
+    font-style: italic;
+    font-size: 12px;
+    text-align: left !important;
+    padding: 5px;
+}
+
+    .BuildingBlockErrorMessage img {
+        width: 18px;
+        height: 18px;
+        vertical-align: middle;
+    }
+
+    .BuildingBlockErrorMessage span {
+        padding-left: 5px;
+        vertical-align: middle;
+    }
+
+/*TABLE*/
+.RowNumberCell {
+    white-space: nowrap;
+    background: #F5F5F5;
+    width: 1px;
+    border: 1px solid #C0C0C0;
+}
+
+.RowNumberCellHeader {
+    white-space: nowrap;
+    background: #F5F5F5;
+    width: 1px;
+    border: 1px solid #C0C0C0;
+}
+
+.BuildingBlock .FilterActive {
+    background-color: #FFDE74;
+}
+
+.RowNumberCell:hover {
+    background: #A0A0A0;
+}
+
+.RowNumberCellLabel {
+    width: 10px;
+}
+
+.ColumnsHeaderTable {
+    width: 100%;
+}
+
+    .ColumnsHeaderTable td {
+        border: none;
+        padding: 0px;
+    }
+
+.ColumnsHeader {
+    background-color: #F5F5F5;
+    font-weight: bold;
+    padding: 2px 6px;
+    border: 1px solid #C0C0C0;
+    height: 17px;
+}
+
+.TransposedColumnsHeader {
+    width: 250px;
+    height: 16px;
+    background-color: #F5F5F5;
+    border: 1px solid #C0C0C0;
+    position: static;
+    padding: 4px 4px 0px 4px;
+    font-weight: bold;
+    vertical-align: top;
+}
+
+.TableColumn {
+    vertical-align: top;
+    height: 16px;
+    padding: 2px 4px 2px 4px;
+    border: 1px solid #C0C0C0;
+}
+
+.TransposedTableRow {
+    vertical-align: top;
+    height: 16px;
+    padding: 2px 4px 2px 4px;
+    border: 1px solid #C0C0C0;
+}
+
+.ColumnsHeaderTable td {
+    width: 3px;
+}
+
+    .ColumnsHeaderTable td:first-child {
+        width: 100%;
+    }
+
+.Sort_Inactive, .Sort_Active, .Filter_Inactive, .Filter_Active {
+    cursor: pointer;
+    float: left;
+    vertical-align: middle;
+    text-align: center;
+    width: 14px;
+}
+
+.BuildingBlock .NoResults {
+    border: 1px solid #C0C0C0;
+    height: 16px;
+}
+
+.BuildingBlock .NotEditable {
+    opacity: 0.7;
+}
+
+/* COMPACT TABLE*/
+.bb_compacttable {
+    margin-bottom: 16px;
+    position: relative;
+    color: #484848;
+    text-align: left;
+}
+
+    .bb_compacttable .content {
+        background-color: #FFFFFF;
+        border-spacing: 0;
+        width: 100%;
+    }
+
+    .bb_compacttable .item {
+        display: flex;
+        padding: 12px;
+        border-bottom-style: dotted;
+        border-bottom-width: 1px;
+        border-bottom-color: #CDCDCD;
+        cursor: pointer;
+    }
+
+        .bb_compacttable .item:hover {
+            background-color: #f2f2f2;
+        }
+
+        .bb_compacttable .item.disabled,
+        #Preview .bb_compacttable .item {
+            cursor: default;
+        }
+
+            .bb_compacttable .item.disabled:hover,
+            #Preview .bb_compacttable .item:hover {
+                background-color: initial;
+            }
+
+    .bb_compacttable .imageWrapper {
+        min-width: 16px;
+        padding-right: 3px;
+    }
+
+        .bb_compacttable .imageWrapper img.icon {
+            width: 16px;
+            height: 16px;
+            min-width: 16px;
+            min-height: 16px;
+            position: absolute;
+            padding-top: 2px;
+        }
+
+    .bb_compacttable .cellWrapper {
+        display: flex;
+        flex-flow: row wrap;
+        flex: 1 100%;
+    }
+
+        .bb_compacttable .cellWrapper .firstCell,
+        .bb_compacttable .cellWrapper .secondCell {
+            flex: 1 100%;
+        }
+
+        .bb_compacttable .cellWrapper .firstCell {
+            font-weight: bold;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            min-height: 25px;
+        }
+
+        .bb_compacttable .cellWrapper .secondCell {
+            color: #909090;
+            /*ellipsis on two lines*/
+            display: block; /* Fallback for non-webkit */
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            min-height: 29px;
+        }
+
+        .bb_compacttable .cellWrapper .thirdCell,
+        .bb_compacttable .cellWrapper .fourthCell,
+        .bb_compacttable .cellWrapper .fifthCell,
+        .bb_compacttable .cellWrapper .spacerCell {
+            flex: 1 auto;
+            flex: 1 30%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .bb_compacttable .cellWrapper .thirdCell {
+            margin-right: 5px;
+        }
+
+        .bb_compacttable .cellWrapper .fourthCell {
+            margin-left: 5px;
+            margin-right: 5px;
+            text-align: center;
+        }
+
+        .bb_compacttable .cellWrapper .fifthCell {
+            margin-left: 5px;
+            text-align: right;
+        }
+
+        .bb_compacttable .cellWrapper .secondaryIconWrapper {
+            display: inline-flex;
+            vertical-align: top;
+        }
+
+    .bb_compacttable .ParameterName {
+        font-weight: bold;
+    }
+
+    .bb_compacttable .SearchButton {
+        display: inline-block;
+        float: right;
+    }
+
+    .bb_compacttable .highlight {
+        font-weight: bold;
+    }
+
+    .bb_compacttable .parameters {
+        overflow: hidden;
+    }
+
+    .bb_compacttable .noresults {
+        padding-left: 10px;
+        padding-top: 4px;
+    }
+
+    .bb_compacttable .ParameterTable .ParameterTableButtonContainer {
+        border: 0;
+        border-left: 1px solid silver;
+        display: inline-block;
+        padding: 6px 6px 7px 6px;
+        position: absolute;
+        right: 5px;
+        width: inherit;
+    }
+
+    .bb_compacttable .ParameterTable .ParameterTableDropDown {
+        display: none;
+        overflow: auto;
+        position: absolute;
+    }
+
+        .bb_compacttable .ParameterTable .ParameterTableDropDown li img {
+            width: 16px;
+            height: 16px;
+        }
+
+    .bb_compacttable .ParameterTable .ParameterTableInputContainer input:focus {
+        outline-width: 0;
+    }
+
+/*PIVOT*/
+
+.PivotValueRow {
+    vertical-align: top;
+    text-align: right;
+    cursor: pointer;
+}
+
+.PivotValueCell {
+    border: 1px solid #E6E6E6;
+    border-bottom: none;
+    padding-right: 4px;
+}
+
+.PivotValueHeaderRow {
+    background-color: #F0F0F0;
+    font-family: Tahoma;
+    font-size: 8pt;
+    font-weight: bold;
+}
+
+.PivotValueHeaderCell {
+    vertical-align: top;
+    text-align: left;
+    width: 100px;
+    border: 1px solid #E6E6E6;
+    border-bottom: none;
+    padding-left: 4px;
+}
+
+.PivotGrandTotalColumnCell {
+    background-color: #F5F5F5;
+    border: 1px solid #E2E2E2;
+    border-bottom: none;
+    padding-right: 4px;
+}
+
+.PivotTableGrandTotalColumnHeaderCell {
+    background-color: #E2E2E2;
+    padding-right: 4px;
+    text-align: right;
+    border: 1px solid #A0A0A0;
+}
+
+.PivotTableGrandTotalRowCell {
+    background-color: #E2E2E2;
+    text-align: right;
+    cursor: pointer;
+    border: 1px double #A0A0A0;
+    padding-right: 4px;
+}
+
+.PivotTableGrandTotalRowHeaderCell {
+    background-color: #E2E2E2;
+    text-align: left;
+    width: 100px;
+    border: 1px solid #A0A0A0;
+    padding-left: 4px;
+}
+
+.PivotTableResultNotSuccessfulCell {
+    color: #FF0000;
+    padding: 5px;
+    text-align: center;
+}
+
+.PivotTableNewRow {
+    border-bottom: 1px double #A0A0A0;
+    font-weight: bold;
+}
+
+
+
+/*CHART*/
+.ChartContentRow {
+}
+
+.ChartContentCell {
+    text-align: center;
+    border: 1px solid #C0C0C0;
+}
+
+
+/*TEXTFRAGMENT*/
+.TextFragmentContentRow {
+}
+
+.TextFragmentContentCell {
+}
+
+
+/*TABS*/
+.TabTable {
+    width: 100%;
+}
+
+.Tab, .TabSelected, .TabSelectedModified, .TabUnselected, .TabUnselectedModified {
+    text-align: center;
+    cursor: pointer;
+}
+
+.TabSelected, .TabSelectedModified {
+    background-color: white;
+    border: 2px solid black;
+    border-bottom: none;
+}
+
+.TabSelectedModified {
+    border-color: red;
+    border-bottom: none;
+}
+
+.TabUnselected, .TabUnselectedModified {
+    background-color: #F5F5F5;
+    border-bottom: 2px solid #000;
+}
+
+.TabUnselectedModified {
+    border-bottom-color: red;
+}
+
+.TabLinkSelected, .TabLinkUnselected {
+    width: 100%;
+    text-decoration: none;
+    font-family: Tahoma;
+    font-size: 13px;
+}
+
+.TabLinkSelected {
+    color: #000;
+}
+
+.TabLinkUnselected {
+    color: gray;
+}
+
+/*SECTIONS*/
+.SectionTable {
+    width: 100%;
+}
+
+.SectionTableRow {
+    vertical-align: top;
+}
+
+
+/*SELECTION TABLE*/
+.SelectionTableHeader {
+    border: 1px solid #C0C0C0;
+    vertical-align: top;
+    height: 17px;
+}
+
+.SelectionTableToolboxCell {
+    vertical-align: middle;
+    height: 18px;
+    padding: 2px;
+}
+
+.FirstSelectionColumn {
+    padding: 2px;
+    padding-right: 3px;
+}
+
+.SelectionColumn {
+    border: 1px solid #ccc;
+    padding: 3px;
+    padding-left: 4px;
+    border-left: 1px solid #ccc;
+}
+
+/*SELECTION TREE*/
+.SelectionTreeRootNode {
+    color: Gray;
+}
+
+.SelectionTreeViewRadMenuItem {
+    width: 175px;
+}
+
+.SelectionTreeViewResultLabel {
+    font-family: Tahoma;
+    font-size: 8pt;
+}
+
+
+/*PRESENTATIONHEADER*/
+.PresentationHeaderTable {
+    width: 100%;
+    border: 1px solid #C0C0C0;
+}
+
+.PresentationHeaderTableCell {
+    height: 26px;
+    background-color: #C0C0C0;
+    vertical-align: middle;
+    font: normal bold 10pt Tahoma;
+    color: #000000;
+    padding-left: 4px;
+}
+
+.PresentationHeaderTable .ToolBarCell {
+    width: 20px;
+    border-left-style: hidden;
+}
+
+.PresentationSubHeaderTable {
+    width: 100%;
+    margin-bottom: 7px;
+}
+
+.PresentationSubHeaderTableCell {
+    height: 26px;
+    vertical-align: middle;
+    border: 1px solid #C0C0C0;
+    font: normal bold 10pt Tahoma;
+    color: #000000;
+    padding-left: 4px;
+}
+
+    .PresentationSubHeaderTableCell img {
+        margin-right: 4px;
+        margin-top: -4px;
+        max-height: 16px;
+        max-width: 16px;
+        vertical-align: middle;
+    }
+
+.PresentationHeaderTableSpacing {
+    margin-bottom: 7px;
+}
+
+/*ToolBar*/
+.ToolbarTable {
+    border: none;
+}
+
+.ToolbarTableRow {
+    height: 15px;
+}
+
+.ToolbarTableCellSpaceBefore {
+    width: 1px;
+    border-left: 1px solid silver;
+    border-right: 1px solid silver;
+}
+
+.ToolbarTableCell {
+    vertical-align: middle;
+    text-align: center;
+    border: none;
+    padding-left: 2px;
+    padding-right: 2px;
+    white-space: nowrap;
+}
+
+.Link {
+    cursor: pointer;
+}
+
+
+/*Paging*/
+.PagingRowTableCell {
+    white-space: nowrap;
+    border: 1px solid #C0C0C0;
+    border-top: none;
+    background-color: #F5F5F5;
+}
+
+.PagingItem,
+.PagingItemSelected,
+.PagingEllipses {
+    white-space: nowrap;
+    font-size: 8pt;
+    font-family: Tahoma;
+    background: #F5F5F5;
+    margin: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border: 1px solid #F5F5F5;
+    min-width: 8px;
+    float: left;
+    text-align: center;
+}
+
+.PagingItem, .PagingItemSelected {
+    cursor: pointer;
+}
+
+    .PagingItemSelected, .PagingItem:hover {
+        background: #FFFFFF;
+        border: 1px solid #A0A0A0;
+    }
+
+.PagingSummary {
+    float: right;
+    padding-right: 4px;
+    margin: 2px;
+}
+
+
+/* SDD Semantic Drill Down */
+.SemanticSearch {
+    height: 1px;
+    vertical-align: top;
+    border: 1px solid #C0C0C0;
+}
+
+.SemanticSearchCell {
+    width: 250px;
+    border: 1px solid #C0C0C0;
+}
+
+.SemanticSearchList {
+    list-style-type: none;
+    margin-left: 6px;
+    margin-top: 2px;
+    padding: 0px 50px 0px 10px;
+    font-family: tahoma;
+    font-size: 8pt;
+}
+
+.SemanticSearchItem, .SemanticSearchSelectedItem {
+    list-style-type: none;
+    margin-bottom: 12px;
+    margin-top: 6px;
+    padding-left: 16px;
+}
+
+.SemanticSearchShowSub, .SemanticSearchCategoryNode, .SemanticSearchSelectedItem {
+    color: #0070C0;
+    cursor: pointer;
+    margin-bottom: 6px;
+}
+
+.SemanticSearchMore {
+    color: #0070C0;
+    cursor: pointer;
+}
+
+
+/*PARAMETERS*/
+.paramTable {
+    width: 100%;
+    font-family: Tahoma;
+    font-size: 8pt;
+    border-style: none;
+}
+
+.paramHeaderTableCell {
+    height: 20px;
+    vertical-align: middle;
+    background-color: Silver;
+    color: Black;
+    font-weight: bold;
+    border-style: none;
+    padding: 2px 4px;
+}
+
+.paramContentLeft {
+    width: 30%;
+    font-weight: bold;
+    padding: 2px 4px;
+    vertical-align: middle;
+    border-style: none;
+}
+
+.paramContentRight {
+    white-space: nowrap;
+    padding: 0 4px;
+    vertical-align: middle;
+    border-style: none;
+}
+
+    .paramContentRight input, .paramContentRight table {
+        border: 1px solid silver;
+        width: 100%;
+        margin: 3px 0px;
+        font-family: Tahoma;
+        font-size: 8pt;
+    }
+
+.paramFooter {
+    border-style: none;
+}
+
+.paramFooterFeedback {
+    float: left;
+}
+
+.paramFooterSearchButton {
+    float: right;
+    margin: 10px 0;
+    width: 80px;
+    font-family: Tahoma;
+    font-size: 8pt;
+}
+
+.paramComboImage {
+    float: right;
+    margin-top: 3px;
+    margin-left: -12px;
+    position: absolute;
+}
+
+.paramDatePickerRow {
+    vertical-align: top;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: gray;
+}
+
+.paramDatePickerInputCell {
+    border-width: 0px;
+    font-family: Tahoma;
+    font-size: 8pt;
+    width: 100%;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin: 0px;
+}
+
+td input.paramDatePickerInput {
+    border-width: 0px;
+    font-family: Tahoma;
+    font-size: 8pt;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.paramDatePickerImageCell {
+    width: 20px;
+}
+
+.paramDatePickerTable {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* TREEVIEW */
+.TreeViewMainTable /* For HTML archive */ {
+    width: 100%;
+}
+
+.TreeViewHeaderTable {
+    width: 100%;
+}
+
+.TreeView {
+    border: 1px solid #C0C0C0;
+}
+
+.TreeViewControl {
+    padding-left: 4px;
+}
+
+.NoResultSetNode {
+    font-family: Tahoma;
+    font-size: 8pt;
+}
+
+.TreeViewResultLabel {
+    font-family: Tahoma;
+    font-size: 8pt;
+    margin: 0 0 3px 3px;
+}
+
+.RadTreeView_Relatics, .RadTreeView_Relatics a.rtIn,
+.RadTreeView_Relatics .rtEdit .rtIn input {
+    font-size: 8pt;
+}
+
+    .RadTreeView_Relatics .rtEdit .rtIn input {
+        line-height: 8pt;
+        height: 8pt;
+    }
+/* Preview */
+.PreviewTable {
+    width: 100%;
+    font-family: Tahoma;
+    font-size: 8pt;
+    margin-bottom: 16px;
+    border-collapse: collapse;
+}
+
+.PreviewTableHeaderCell {
+    font-weight: bold;
+    padding-left: 4px;
+    background-color: #C0C0C0;
+}
+
+.PreviewTableCell {
+    border: 1px solid #C0C0C0;
+    vertical-align: top;
+    height: 16px;
+    padding: 2px 4px;
+}
+
+.Weblink {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 9pt;
+    font-family: Tahoma;
+    color: #000000;
+    background-color: #EBEBEB;
+}
+
+
+/* CrossTable */
+.CrossTable {
+    border-collapse: collapse;
+    border: 1px solid silver;
+    width: 100%;
+}
+
+.CrossTableHeader {
+    height: 20px;
+    min-height: 20px;
+    border: 1px solid silver;
+}
+
+.CrossTableLeftCell {
+    border: 1px solid silver;
+    vertical-align: top;
+    text-align: left;
+    text-overflow: ellipsis;
+    min-width: 200px;
+    height: 16px;
+    padding: 5px;
+}
+
+    .CrossTableLeftCell > a {
+        cursor: pointer;
+        vertical-align: top;
+    }
+
+        .CrossTableLeftCell > a:hover {
+            text-decoration: underline;
+        }
+
+.CrossTableTopCell {
+    background-color: white;
+    border: 1px solid silver;
+    border-top: none;
+    overflow: hidden;
+    vertical-align: top;
+    min-width: 16px;
+    max-width: 16px;
+    width: 16px;
+    height: 150px;
+    padding: 5px;
+}
+
+    .CrossTableTopCell > div > div > a {
+        cursor: pointer;
+        vertical-align: top;
+    }
+
+    .CrossTableTopCell > div > div > img {
+        margin-top: 0px;
+    }
+
+    .CrossTableTopCell > div > div > a:hover {
+        text-decoration: underline;
+    }
+
+    .CrossTableTopCell > div {
+        transform: rotate(270deg);
+        transform-origin: 0 0;
+        -moz-transform: rotate(270deg);
+        -moz-transform-origin: 0 0;
+        -webkit-transform: rotate(270deg);
+        -webkit-transform-origin: 0 0;
+        -o-transform: rotate(270deg);
+        -o-transform-origin: 0 0;
+        -ms-transform: rotate(270deg);
+        -ms-transform-origin: 0 0;
+        display: block;
+        overflow: hidden;
+        max-height: 16px;
+        max-width: 145px;
+        min-width: 145px;
+        min-height: 16px;
+        position: relative;
+        top: 145px;
+        left: 0px;
+    }
+
+        .CrossTableTopCell > div > div {
+            max-width: 145px;
+            width: 145px;
+            max-height: 16px;
+            overflow: hidden;
+            vertical-align: middle;
+            display: table-cell;
+            height: 16px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+.CrossTableContentCellFilled {
+    border: 1px solid silver;
+    vertical-align: middle;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #F0F0F0;
+    min-width: 16px;
+}
+
+.CrossTableContentCellEmpty {
+    border: 1px solid silver;
+    vertical-align: middle;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: white;
+    min-width: 16px;
+}
+
+.CrossTableContentCellFilled > a {
+    cursor: pointer;
+}
+
+    .CrossTableContentCellFilled > a:hover {
+        text-decoration: underline;
+    }
+
+.CrossTableLeftTopCrossCell {
+    background-color: white;
+    border: none;
+    width: 1000px; /* Hack to get freeze headers to display the correct width. */
+}
+
+table.CrossTableEmpty {
+    width: 100%;
+}
+
+.CrossTableEmptyContentCell {
+    min-height: 250px;
+    height: 250px;
+    max-height: 250px;
+    border: 1px solid silver;
+    vertical-align: top;
+}
+
+    .CrossTableEmptyContentCell > a {
+        cursor: pointer;
+        position: relative;
+        left: 20px;
+        top: 20px;
+    }
+
+        .CrossTableEmptyContentCell > a:hover {
+            text-decoration: underline;
+        }
+
+.CrossTableEmptyTopCell {
+    min-height: 100px;
+    height: 100px;
+    max-height: 100px;
+}
+
+    .CrossTableEmptyTopCell > a {
+        cursor: pointer;
+    }
+
+        .CrossTableEmptyTopCell > a:hover {
+            text-decoration: underline;
+        }
+
+.CrossTableEmptyLeftCell {
+    min-width: 100px;
+    width: 100px;
+    max-width: 100px;
+}
+
+    .CrossTableEmptyLeftCell > a {
+        cursor: pointer;
+    }
+
+        .CrossTableEmptyLeftCell > a:hover {
+            text-decoration: underline;
+        }
+
+.CrossTableGeneralErrorMessage {
+}
+
+    .CrossTableGeneralErrorMessage > a {
+        cursor: pointer;
+    }
+
+        .CrossTableGeneralErrorMessage > a:hover {
+            text-decoration: underline;
+        }
+
+td.CrossTableRowColumnHighlight {
+    background-color: #F0F0F0;
+}
+
+.ShowInMainPortal {
+    padding-top: 50px;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+}
+
+    .ShowInMainPortal a {
+        color: #CDCDCD;
+    }
+
+        .ShowInMainPortal a:hover {
+            color: #484848;
+            cursor: pointer;
+        }
+
+
+a.gpsLink, a.downloadDocumentLink {
+    color: inherit;
+}
+
+a.preview-file-button {
+    text-decoration: underline;
+}
+
+div#loadingPanel {
+    background-color: #fff!important;
+    border: none  !important;
+    border-top: 4px solid #D1D1D0 !important;
+    bottom: 0;
+    display: none;
+    min-height: 70px;
+    position: fixed;
+    width:100% !important;
+    z-index: 10000;
+}
+
+div#loadingPanel table {
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+div#loadingPanel table td:first-child {
+    width: 32px;
+}
+ 
+div#loadingPanel table td:last-child {
+    width: 32px;
+}
+ 
+div#loadingPanel table td {
+    padding: 8px;
+    vertical-align: top;
+}
+ 
+div#loadingPanel table td:last-child img:hover  {
+    cursor: pointer;
+}
+
+#loadingPanelRefresh {
+    white-space: pre-line;
+}
+
+.no-select {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* IE/Edge */
+  user-select: none;           /* non-prefixed version, currently
+                                  not supported by any browser */
+}

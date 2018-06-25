@@ -1,0 +1,356 @@
+﻿a img {
+    border: 0;
+}
+
+.FRMDiv {
+    display: inline;
+    vertical-align: top;
+    text-decoration: inherit;
+}
+
+.FRMLink {
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: inherit;
+    cursor: pointer;
+}
+
+    .FRMLink:hover {
+        text-decoration: underline;
+    }
+
+.cellSelector {
+    line-height: 0;
+    font-size: 0;
+}
+
+.IL {
+    margin-right: 3px;
+    max-width: 16px;
+    max-height: 16px;
+    vertical-align: middle;
+}
+
+.IL, .IE {
+    max-width: 16px;
+    max-height: 16px;
+}
+
+/* clickable label */
+.RL {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* label na een image */
+.RI {
+    margin-left: 3px;
+    vertical-align: top;
+}
+
+/* clickable label na een image */
+.RIH {
+    vertical-align: top;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.RIH, .RI, .RL {
+    text-decoration: none;
+}
+
+    .RIH:hover, .RL:hover {
+        text-decoration: underline;
+    }
+
+.RICHTEXTRIH {
+    vertical-align: top;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.RICHTEXTRIH, .RI, .RL {
+    text-decoration: none;
+}
+
+    .RICHTEXTRIH:hover, .RL:hover {
+        cursor: pointer;
+    }
+
+
+
+/* setting voor een clickable image */
+.IH {
+    border-width: 0;
+    cursor: pointer;
+}
+
+/* textbox multiline small (Input Type = Text) */
+.TB1, .TB2, .TB3 {
+    border-width: 0;
+    overflow: hidden;
+    width: 100%;
+    font: inherit;
+    padding: 0;
+    background-color: transparent;
+}
+
+    .TB1:focus, .TB2:focus, .TB3:focus {
+        outline: 0;
+    }
+
+/* clean table  */
+.CT {
+    font-size: 12px;
+    font-family: 'Open Sans',Tahoma;
+    border-width: 0;
+    width: 100%;
+    padding: 0;
+    border-collapse: collapse;
+}
+
+.NoResults {
+    color: lightgrey;
+}
+
+ul.R {
+    font-size: 12px;
+    font-family: 'Open Sans',Tahoma;
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    cursor: pointer;
+    background-color: #FFFFFF;
+    border-color: #000000;
+    border-width: 0;
+    overflow-x: hidden;
+}
+
+.liR {
+    background-color: #ffffff;
+    height: 20px;
+    line-height: 20px;
+    padding: 2px;
+    white-space: nowrap;
+    margin: 0;
+    border-width: 0;
+}
+
+.liRSelected {
+    background-color: #DFDFDF;
+    height: 16px;
+    white-space: nowrap;
+    margin: 0;
+    border-width: 0;
+}
+
+.liR:hover {
+    background-color: #DFDFDF;
+    z-index: 1;
+}
+
+.liR.active {
+    background-color: #DFDFDF;
+    z-index: 1;
+}
+
+.liR img {
+    width: 16px;
+    height: 16px;
+    margin-bottom: -3px;
+    margin-right: 4px;
+}
+
+.liR.synced {
+    color: #94c11f;
+}
+
+.liR.synced img {
+    border: 1px dashed #94c11f;
+    border-radius: 4px;
+    padding: 1px;
+}
+
+.trSelected {
+    background-color: #DFDFDF;
+}
+
+.RichText :first-child {
+    margin-top: 0;
+}
+
+.RichText :last-child {
+    margin-bottom: 0;
+}
+
+.DebugOpenWorkspace {
+    font-size: 12px;
+    font-family: 'Open Sans',Tahoma;
+    margin-bottom: 12px;
+}
+
+.divImage {
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin-right: 4px;
+}
+
+div.relaticsButton {
+    width: 100px;
+    height: 20px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid #aaaaaa;
+    background-color: #C0C0C0;
+    background-image: -ms-linear-gradient(top, #FEFEFF 0%, #EEF0F3 100%);
+    background-image: -moz-linear-gradient(top, #FEFEFF 0%, #EEF0F3 100%);
+    background-image: -o-linear-gradient(top, #FEFEFF 0%, #EEF0F3 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FEFEFF), color-stop(1, #EEF0F3));
+    background-image: -webkit-linear-gradient(top, #FEFEFF 0%, #EEF0F3 100%);
+    background-image: linear-gradient(to bottom, #FEFEFF 0%, #EEF0F3 100%);
+    -webkit-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.1);
+    box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+    div.relaticsButton > div:first-child {
+        width: 24px;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: 16px, 16px;
+        background-position-x: 4px;
+        background-position-y: 2px;
+        float: left;
+    }
+
+    div.relaticsButton > div:last-child {
+        float: left;
+        margin-top: 2px;
+        padding-left: 6px;
+        font-size: 9pt;
+        border-left: 1px #878b97 dotted;
+    }
+
+
+.SelectionItemCellRightWithImage {
+    background-repeat: no-repeat;
+    background-size: 16px, 16px;
+    padding-left: 22px;
+    background-position-y: 2px;
+    background-position-x: 4px;
+}
+
+.SelectionItemCellRightWithImage.synced {
+    color: #94c11f;
+}
+
+.PopUpBox {
+    position: absolute;
+    border: 1px solid #000;
+    text-align: center;
+    font-size: 8pt;
+    padding: 0;
+    z-index: 7000;
+    min-width: 200px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+    .PopUpBox .SearchBox {
+        background-color: #ccc;
+        padding: 2px 4px;
+        text-align: left;
+    }
+
+        .PopUpBox .SearchBox input {
+            font-size: 8pt;
+        }
+
+    .PopUpBox .ResultBox {
+        height: 200px;
+        min-width: 200px;
+        overflow: auto;
+    }
+
+    .PopUpBox .message 
+    {
+        background: #ccc;
+        text-align: center;
+        font-weight: bold;
+        font-style: italic;
+        padding: 2px 2px;
+    }
+
+    .PopUpBox .BottomBox {
+        background-color: #ccc;
+        padding: 4px 1px 4px 0;
+        text-align: right;
+    }
+
+        .PopUpBox .BottomBox .SelectLinks {
+            float: left;
+            margin: 1px 0 0 4px;
+        }
+
+            .PopUpBox .BottomBox .SelectLinks a {
+                color: #000;
+            }
+
+        .PopUpBox .BottomBox .btn {
+            border: 1px solid #000;
+            font-size: 8pt;
+            margin: 0 2px;
+        }
+
+    .PopUpBox td[data-data-type="integer"],
+    .PopUpBox td[data-data-type="decimal"],
+    .selection-table td[data-data-type="integer"],
+    .selection-table td[data-data-type="decimal"],
+    .standard-table td[data-data-type="integer"],
+    .standard-table td[data-data-type="decimal"],
+    td[data-is-numeric] { /* Use unspecific selector to be overridable by customer css selector: https://kb.relaticsonline.com/workspace/index?eid=64fd198e-0bdb-4fc7-bd0b-d3dc8dfbad73&wid=3e504662-9607-48a0-832e-ba00638e32d2*/
+        text-align: right;
+    }
+
+.transposed-table td[data-is-numeric] {
+    text-align: left;
+}
+
+html[data-feature-hasdatedefaultwidth-enabled] .standard-table td.ColumnsHeader[data-data-type="date"],
+html[data-feature-hasdatedefaultwidth-enabled] .selection-table td.ColumnsHeader[data-data-type="date"] {
+    width: 75px;
+}
+
+.PopUpBox td.string,
+.selection-table td.string,
+.standard-table td.string,
+.transposed-table td.string {
+    text-align: left;
+}
+
+input[data-data-type="integer"].standard-table,
+input[data-data-type="decimal"].standard-table,
+input[data-data-type="undefined"][data-is-numeric].standard-table,
+textarea[data-data-type="integer"].standard-table,
+textarea[data-data-type="decimal"].standard-table,
+textarea[data-data-type="undefined"][data-is-numeric].standard-table,
+input.NumericInput 
+{
+    text-align: right;
+    padding-right: 6px;
+}
+
+input.CHB {
+    vertical-align: text-bottom;
+}
+
+.label:not(:first-child) {
+    margin-left: 5px;
+}
+
+.label.synced {
+    color: #94c11f;
+}

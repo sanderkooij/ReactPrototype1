@@ -1,0 +1,679 @@
+﻿body, input {
+    font-family: 'Open Sans', Tahoma;
+    font-size: 12px;
+}
+
+.SystemRowNumberCell {
+    white-space: nowrap;
+    background: #F5F5F5;
+    width: 5px;
+    border: none;
+    border-bottom: 1px dotted #DCDCDC;
+}
+
+.SystemNodeSet {
+    font-size: 12px;
+    font-family: 'Open Sans', Tahoma;
+    /*letter-spacing: 0.5px;*/
+}
+
+.SystemNodeSetBold {
+    font-weight: bold;
+    font-size: 12px;
+    font-family: 'Open Sans', Tahoma;
+    /*letter-spacing: 0.5px;*/
+}
+/* BuildingBlock */
+.SystemBuildingBlock {
+    width: 100%;
+    font-family: 'Open Sans', Tahoma;
+    font-size: 12px;
+    margin-bottom: 16px;
+    border-collapse: collapse;
+}
+
+.SystemBuildingBlockHeader, .SystemBuildingBlockHeaderExpanded, .SystemBuildingBlockHeaderCollapsed {
+    padding: 4px;
+    height: 20px;
+    border: none;
+    border-bottom: 1px solid #94c11f;
+    vertical-align: middle;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: #ffffff;
+}
+
+.SystemBuildingBlockHeader {
+    color: #94c11f;
+}
+
+.SystemBuildingBlockHeaderExpanded {
+    color: #484848;
+    /* background-image: url(images/BuidingBlocksExpandable/Expanded.png); */
+}
+
+.SystemBuildingBlockHeaderCollapsed {
+    color: #94c11f;
+    /* background-image: url(images/BuidingBlocksExpandable/Collapsed.png); */
+}
+
+.SystemBuildingBlockHeaderExpanded:hover {
+    /* background-image: url(images/BuidingBlocksExpandable/ExpandedHover.png); */
+}
+
+.SystemBuildingBlockHeaderCollapsed:hover {
+    /* background-image: url(images/BuidingBlocksExpandable/CollapsedHover.png); */
+}
+
+.SystemBuildingBlockHeaderExpanded, .SystemBuildingBlockHeaderCollapsed {
+    margin-top: 16px;
+    cursor: pointer;
+    padding-left: 25px;
+    background-position-x: 10px;
+    background-position-y: center;
+    background-repeat: no-repeat;
+}
+
+
+.SystemBuildingBlockHeaderEndUser {
+    background: #d0d0d0;
+    border: none;
+    color: #484848;
+    font-size: 15px;
+    font-weight: bold;
+    height: 20px;
+    letter-spacing: 1px;
+    padding: 4px;
+    padding-left: 10px;
+    vertical-align: middle;
+}
+
+
+/*TABLE*/
+.SystemRowNumberCell {
+    white-space: nowrap;
+    background: #F5F5F5;
+    width: 1px;
+    border: 1px solid #C0C0C0;
+}
+
+.SystemRowNumberCellHeader {
+    white-space: nowrap;
+    background: #F5F5F5;
+    width: 1px;
+    border-bottom: 1px solid #C0C0C0;
+}
+
+.SystemColumnsHeader {
+    padding: 2px 4px;
+    height: 17px;
+    border: none;
+    border-bottom: 1px solid #ACACAC;
+    background-color: #F5F5F5;
+    font-weight: bold;
+    /*letter-spacing: 1px;*/
+}
+
+.SystemTransposedColumnsHeader {
+    position: static;
+    padding: 6px;
+    width: 250px;
+    height: 16px;
+    border: none;
+    border-bottom: 1px dotted #DCDCDC;
+    background-color: #F5F5F5;
+    vertical-align: top;
+    font-weight: bold;
+    /*letter-spacing: 1px;*/
+}
+
+.SystemTableColumn.Narrow {
+    max-width: 11px;
+}
+
+.SystemTransposedTableRow, .SystemTableColumn {
+    padding: 6px;
+    height: 16px;
+    border: none;
+    border-bottom: 1px dotted #DCDCDC;
+    vertical-align: top;
+    /*letter-spacing: 0.5px;*/
+}
+
+/*PRESENTATIONHEADER*/
+.SystemPresentationHeaderTable {
+    width: 100%;
+}
+
+.SystemPresentationHeaderTableCell {
+    padding: 2px;
+    height: 26px;
+    border-bottom: 1px solid #94c11f;
+    color: #484848;
+    vertical-align: middle;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Open Sans', Tahoma;
+    width: 100%;
+}
+
+.SystemPresentationHeaderTableCellEndUser {
+    background-color: #C0C0C0;
+    border: 1px solid #C0C0C0;
+    color: #484848;
+    font: normal bold 10pt Tahoma;
+    font-family: 'Open Sans', Tahoma;
+    font-size: 15px;
+    height: 26px;
+    letter-spacing: 1px;
+    padding: 2px;
+    padding-left: 10px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.SystemPresentationHeaderTable .SystemToolBarCell {
+    border: 0;
+    border-bottom: 1px solid #94c11f;
+    border-left-style: hidden;
+    width: 20px;
+    display: none;
+}
+
+.SystemPresentationSubHeaderTableCell {
+    padding-left: 4px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    height: 24px;
+    border: none;
+    background-color: #f1efee;
+    color: #484848;
+    vertical-align: middle;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: 'Open Sans', Tahoma;
+}
+
+    .SystemPresentationSubHeaderTableCell img {
+        width: 16px;
+        height: 16px;
+        vertical-align: middle;
+        margin-right: 4px;
+        margin-top: -4px;
+        display: none;
+    }
+
+.SystemPresentationHeaderTableSpacing {
+    margin-bottom: 16px;
+}
+
+/*ToolBar*/
+.SystemToolbarTableCellSpaceBefore {
+    width: 1px;
+    border-right: 1px solid silver;
+    border-left: 1px solid silver;
+}
+
+/*TabTable*/
+.TabSelected, .TabSelectedModified {
+    /* background-image: url(images/tabSelectedStudio.png); */
+}
+
+
+/*PARAMETERS*/
+.SystemparamTable {
+    width: 100%;
+    border: none;
+    font-size: 12px;
+    font-family: 'Open Sans', Tahoma;
+}
+
+.SystemparamHeaderTableCell {
+    padding: 2px 4px;
+    height: 24px;
+    border-style: none;
+    color: Black;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.SystemparamContentLeft {
+    padding: 2px 4px;
+    width: 30%;
+    border-style: none;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.SystemparamContentRight {
+    padding: 0 4px;
+    border-style: none;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+    .SystemparamContentRight input, .SystemparamContentRight table {
+        margin: 3px 0px;
+        width: 100%;
+        border: 1px solid silver;
+        font-size: 12px;
+        font-family: 'Open Sans', Tahoma;
+    }
+
+.SystemparamComboImage {
+    position: absolute;
+    float: right;
+    margin-top: 5px;
+    margin-left: -12px;
+}
+
+.SystemparamSelect {
+    width: 100%;
+    font-size: 8pt;
+    font-family: tahoma;
+    height: 17px;
+    margin: 3px 0 3px 0;
+}
+
+/* TREEVIEW */
+.TreeViewMainTable /* For HTML archive */ {
+    width: 100%;
+}
+
+.TreeViewHeaderTable {
+    width: 100%;
+}
+
+.TreeView {
+    border: none;
+}
+
+.TreeViewControl {
+    padding-top: 4px;
+    padding-left: 4px;
+}
+
+.NoResultSetNode {
+    font-size: 12px;
+    font-family: 'Open Sans', Tahoma;
+}
+
+.TreeViewResultLabel {
+    margin: 0 0 3px 3px;
+    font-size: 12px;
+    font-family: 'Open Sans', Tahoma;
+}
+
+.RadTreeView_Relatics, .RadTreeView_Relatics a.rtIn,
+.RadTreeView_Relatics .rtEdit .rtIn input {
+    font-size: 12px;
+}
+
+    .RadTreeView_Relatics .rtUL {
+        margin-left: 3px;
+    }
+
+
+.RadTreeView .rtImg {
+    margin-top: 0;
+    max-height: 16px;
+    max-width: 16px;
+    padding: 2px;
+}
+
+.RadTreeView .rtPlus {
+    margin-top: 7px;
+}
+
+.RadTreeView .rtIn {
+    margin-left: 0px;
+}
+
+.RadTreeView .rtLI .string {
+    text-align: left;
+}
+
+/* Preview */
+.SystemPreviewTable {
+    margin-bottom: 16px;
+    width: 100%;
+    border: 1px solid #c0c0c0;
+    border-collapse: collapse;
+    font-size: 16pt;
+    font-family: 'Open Sans', Tahoma;
+}
+
+.SystemPreviewTableHeaderCell {
+    padding-left: 4px;
+    background-color: #C0C0C0;
+    font-weight: bold;
+}
+
+.SystemPreviewTableCell {
+    height: 16px;
+    border: 1px solid #C0C0C0;
+    vertical-align: top;
+}
+
+
+.SystemWeblink {
+    display: inline-block;
+    background-color: #EBEBEB;
+    color: #484848;
+    text-decoration: none;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 9pt;
+    font-family: 'Open Sans', Tahoma;
+}
+
+/* History */
+
+.SystemHistoryBuildingBlockHeader {
+    padding: 4px;
+    height: 16px;
+    border-right: 1px solid #CECECE;
+    border-left: 1px solid #CECECE;
+    background-color: #CECECE;
+    font-weight: bold;
+}
+
+.SystemHistoryColumnsHeader {
+    padding: 2px 4px;
+}
+
+
+.SystemHistoryColumnsHeader, .SystemRowNumberCellHeader {
+    height: 17px;
+    border-bottom: 1px solid #C0C0C0;
+    font-weight: bold;
+    background: #F5F5F5;
+}
+
+.SystemRowNumberCell {
+    border: none;
+    border-bottom: 1px dotted #DCDCDC;
+}
+
+
+.SystemHistoryHeaderForDeletedObject {
+    color: Red;
+}
+
+.SystemHistoryColumn {
+    padding: 6px;
+    height: 16px;
+    border-bottom: 1px dotted #DCDCDC;
+    vertical-align: top;
+}
+
+    .SystemHistoryColumn a {
+        color: #484848;
+        text-decoration: none;
+    }
+
+        .SystemHistoryColumn a:hover {
+            text-decoration: underline;
+        }
+
+    .SystemHistoryColumn .RIHHistory {
+        color: #808080;
+        text-decoration: none;
+    }
+
+.SystemTransposedColumnsHeader {
+    padding: 6px;
+}
+
+.SystemHistoryTransposedTableRow {
+    padding: 2px 4px 2px 4px;
+    height: 16px;
+    border: 1px dotted #DCDCDC;
+    vertical-align: middle;
+}
+
+    .SystemHistoryTransposedTableRow a {
+        color: #484848;
+        text-decoration: none;
+    }
+
+        .SystemHistoryTransposedTableRow a:hover {
+            text-decoration: underline;
+        }
+
+    .SystemHistoryTransposedTableRow .RIHHistory {
+        color: #808080;
+        text-decoration: none;
+    }
+/* Baseline */
+#btnAddBaseline {
+    width: 68px;
+    height: 22px;
+    font-size: 12px !important;
+}
+/* divider */
+.RadSplitter.RadSplitter_Default td.rspResizeBar,
+.RadSplitter_Default td.rspSlideContainerResizeHorizontal,
+.RadSplitter_Default td.rspResizeBarOverHorizontal,
+.RadSplitter_Default td.rspSlideContainerResizeOverHorizontal,
+.RadSplitter_Default td.rspResizeBarHorizontal {
+    background-image: none;
+    background: #fff;
+}
+/* Button style*/
+.SystemButton:hover {
+    border: 1px inset #67941B;
+}
+
+.SystemButton {
+    width: 150px;
+    background: #94c11f;
+    color: #fff;
+    padding: 4px;
+    font-weight: bold;
+    font-family: inherit;
+    /*letter-spacing: 1px;*/
+    border: 1px outset #67941B;
+    cursor: pointer;
+}
+
+.SystemSubHeader {
+    font-family: inherit;
+    font-size: 9pt;
+    font-weight: bold;
+    /*letter-spacing: 1px;*/
+}
+
+.SystemTextBox {
+    font-family: inherit;
+    background-color: #fff;
+    border-color: #c0c0c0;
+    border-width: 1px;
+    border-style: Solid;
+    width: 95%;
+}
+
+.SystemTextBoxSmall {
+    font-family: inherit;
+    background-color: #fff;
+    border-color: #c0c0c0;
+    border-width: 1px;
+    border-style: Solid;
+    width: 100px;
+    font-size: 9pt;
+}
+
+.SystemButtonSimple {
+    border-color: #c0c0c0;
+    border-width: 1px;
+    border-style: Solid;
+    color: #484848;
+    width: 95%;
+}
+
+.SystemButtonSimpleSmall {
+    border-color: #c0c0c0;
+    border-width: 1px;
+    border-style: Solid;
+    width: 90px;
+    font-size: 8pt;
+    padding: 2px;
+    color: #484848;
+    margin-right: 3px;
+}
+
+.SystemQueryDetails {
+    border: none;
+    background-color: #fff;
+    background-position-x: 0px;
+    background-position-y: 1px;
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    /* background-image: url(../../Images/ExpressEditor/QueryEditor/QueryTree/PQMQuery.png); */
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.SystemTabHolder {
+    margin: 10px;
+}
+
+.IL {
+    margin-right: 3px;
+    max-width: 16px;
+    max-height: 16px;
+    vertical-align: middle;
+}
+
+/* label na een image */
+.RI {
+    vertical-align: top;
+    margin: 0px;
+}
+
+.FieldEditorDivider {
+    border-bottom: 1px dotted #999;
+}
+
+.SystemErrorMessage {
+    font-size: 12px;
+    font-family: 'Open Sans', Tahoma;
+    /*letter-spacing: 0.5px;*/
+    color: #000000;
+}
+
+.SystemExceptionMessage {
+    font-size: 12px;
+    font-family: 'Open Sans', Tahoma;
+    /*letter-spacing: 0.5px;*/
+    color: #FF0000;
+    font-style: italic;
+}
+
+@-moz-document url-prefix() {
+    .ConstraintCombobox:focus {
+        width: 300px;
+    }
+}
+
+.SystemTransposedTableRowDisabled {
+    color: #999999;
+}
+
+
+.RelaticsStudioWarningHeader {
+    display: none;
+}
+
+.RelaticsStudioWarningContent {
+    border: none;
+    color: #484849;
+    padding: 0px;
+    font-size: 12px;
+    font-style: italic;
+    background-repeat: no-repeat;
+    /* background-image: url(../../content/images/warning.png); */
+    background-size: contain;
+    padding-left: 22px;
+}
+
+.cellSelector {
+    border-color: #999999 !important;
+}
+
+.cellSelectorBlock {
+    border: 1px solid white;
+    background-color: #999999;
+}
+
+/* DI Validation */
+.DIValidationWarning {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    color: red;
+}
+
+/* Styling of message block under a building block */
+.buildingBlockMessage {
+    top: -14px;
+    position: relative;
+    left: 6px;
+    font-style: italic;
+}
+/* non-editable cells */
+td.CC.readonly-active-user {
+    background-color: #FAFAFA;
+}
+
+/*Synchronization Indicator*/
+li.rtLI div.synced img.rtImg, 
+td.synced img.IL,
+span.synced img.IL {
+    border: 1px dashed #94c11f;
+    border-radius: 4px;
+    padding: 1px;
+}
+
+li.rtLI div.synced span.rtIn, td.synced .RI,
+.synced > span.RI {
+     color: #94c11f;
+}
+
+
+div.rtTop.optional span.rtIn, div.rtMid.optional span.rtIn, div.rtBot.optional span.rtIn {
+     color: #BBBBBB;
+}
+
+div.rtTop.notexists span.rtIn, div.rtMid.notexists span.rtIn, div.rtBot.notexists span.rtIn {
+     color: red;
+}
+
+div.rtBot.optional.synced span.rtIn {
+      color: #ccdd99;
+}
+
+tr.synced input[type=text],
+tr.synced select {
+    color: #94c11f;
+    border: none;
+    background: transparent;
+}
+
+table.synced {
+    opacity: 0.6;
+}
+
+.password-control {    
+    background-color: transparent;
+    color: black;  
+    height: 16px;
+    border: none;
+    vertical-align: top;
+    letter-spacing: 0.5px;
+    padding: 0;
+    margin: 0;
+}

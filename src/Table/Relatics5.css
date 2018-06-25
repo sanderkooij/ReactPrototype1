@@ -1,0 +1,337 @@
+﻿/* modifications on top of Relatics.css */
+
+/* @font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Open Sans Light'), local('OpenSans-Light'), url(Fonts/OpenSans300.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(Fonts/OpenSans400.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(Fonts/OpenSans600.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Open Sans Bold'), local('OpenSans-Bold'), url(Fonts/OpenSans700.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Open Sans Extrabold'), local('OpenSans-Extrabold'), url(Fonts/OpenSans800.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 300;
+    src: local('Open Sans Light Italic'), local('OpenSansLight-Italic'), url(Fonts/OpenSans300Italic.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Open Sans Italic'), local('OpenSans-Italic'), url(Fonts/OpenSans400Italic.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 600;
+    src: local('Open Sans Semibold Italic'), local('OpenSans-SemiboldItalic'), url(Fonts/OpenSans600Italic.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 700;
+    src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url(Fonts/OpenSans700Italic.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 800;
+    src: local('Open Sans Extrabold Italic'), local('OpenSans-ExtraboldItalic'), url(Fonts/OpenSans800Italic.woff) format('woff');
+} */
+
+.BuildingBlock, .BuildingBlockTextFragment {
+    font-family: 'Open Sans', Tahoma;
+    font-size: 12px;
+}
+
+.BuildingBlockHeader {
+    padding: 4px;
+    padding-left: 10px;
+    border: none;
+    background: #d0d0d0;
+    color: #484848;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+.RowNumberCell {
+    border: none;
+    border-bottom: 1px dotted #DCDCDC;
+}
+
+.RowNumberCellHeader {
+     border: none;
+    border-bottom: 1px solid #ACACAC;
+ }
+
+.ColumnsHeader {
+   border: none;
+    border-bottom: 1px solid #ACACAC;
+}
+
+.TransposedColumnsHeader {
+     padding: 6px;
+    border: none;
+    border-bottom: 1px dotted #DCDCDC;   
+}
+
+.TransposedTableRow, .TableColumn {
+    padding: 6px;
+    border: none;
+    border-bottom: 1px dotted #DCDCDC;
+ 
+}
+
+.BuildingBlock .NoResults {
+    border: none;
+    border-bottom: 1px dotted #DCDCDC;
+    padding: 6px;
+}
+
+.PivotValueRow {
+    vertical-align: middle;
+}
+
+.PivotValueCell {
+    padding: 4px;
+}
+
+.PivotValueHeaderRow {
+    font-family: 'Open Sans', Tahoma;
+    font-size: 12px;
+}
+
+.PivotValueHeaderCell {
+    vertical-align: middle;
+    padding: 4px;
+}
+
+.PivotGrandTotalColumnCell {
+    padding: 4px;
+    color: #484848;
+}
+
+.PivotTableGrandTotalColumnHeaderCell {
+    background-color: #F5F5F5;
+    padding: 4px;
+    color: #484848;
+}
+
+.PivotTableGrandTotalRowCell {
+    background-color: #F5F5F5;
+    padding: 4px;
+}
+
+.PivotTableGrandTotalRowHeaderCell {
+    background-color: #F5F5F5;
+    padding: 4px;
+    color: #484848;
+}
+
+.ChartContentCell {
+    border: 1px solid #d0d0d0;
+}
+
+.TabTable {
+    margin-top: 0px;
+}
+
+.TabSelected, .TabSelectedModified {
+    border: 0px;
+    padding: 5px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+.TabUnselected, .TabUnselectedModified {
+    background-color: #f1efee;
+    border: 0px;
+    padding: 5px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+}
+
+.TabLinkSelected, .TabLinkUnselected {
+    font-family: 'Open Sans', Tahoma;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.TabLinkSelected {
+    color: #444444;
+}
+
+.TabLinkUnselected {
+    color: #484848;
+}
+
+
+/*SELECTION TABLE*/
+.SelectionTableHeader {
+    border: 1px solid #d0d0d0;
+}
+
+.SelectionTreeViewResultLabel {
+    font-family: 'Open Sans', Tahoma;
+}
+
+.PresentationHeaderTable {
+    background: #d0d0d0;
+}
+
+.PresentationHeaderTableCell {
+    padding: 2px;
+    padding-left: 10px;
+    color: #484848;
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-family: 'Open Sans', Tahoma;
+}
+
+.PresentationSubHeaderTable {
+    margin-bottom: 0px;
+}
+
+.PresentationSubHeaderTableCell {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    border: none;
+    background-color: #f1efee;
+    color: #484848;
+    
+    letter-spacing: 1px;
+      font-size: 15px;
+    font-family: 'Open Sans', Tahoma;
+}
+
+    .PresentationSubHeaderTableCell img {
+        margin-bottom: 2px;
+        margin-top: -2px;
+    }
+
+.PresentationHeaderTableSpacing {
+    margin-bottom: 16px;
+}
+
+.PagingRowTableCell {
+    border: none;
+    border-top: 1px solid #d0d0d0;
+  }
+
+.PagingItem, .PagingItemSelected {
+    font-family: 'Open Sans', Tahoma;
+   }
+
+
+/* SDD Semantic Drill Down */
+.SemanticSearch {
+    border: 1px solid #d0d0d0;
+}
+
+.SemanticSearchCell {
+    border: 1px solid #d0d0d0;
+}
+
+.SemanticSearchList {
+    font-family: 'Open Sans', Tahoma;
+}
+
+.paramTable {
+    font-family: 'Open Sans', Tahoma;
+    font-size: 12px;
+}
+
+    .paramContentRight input, .paramContentRight table {
+        font-family: 'Open Sans', Tahoma;
+    }
+
+.paramFooterSearchButton {
+    font-family: 'Open Sans', Tahoma;
+}
+
+.paramComboImage {
+    margin-top: 3px;
+    margin-left: -17px;
+    padding: 2px;
+    background-color: #D3CFC7;
+}
+
+.paramDatePickerInputCell {
+    font-family: 'Open Sans',Tahoma;
+}
+
+td input.paramDatePickerInput {
+    font-family: 'Open Sans',Tahoma;
+}
+
+.TreeView {
+    border: 1px solid #d0d0d0;
+}
+
+.NoResultSetNode {
+    font-family: 'Open Sans', Tahoma;
+}
+
+.TreeViewResultLabel {
+    font-family: 'Open Sans', Tahoma;
+}
+
+.RadTreeView_Relatics, .RadTreeView_Relatics a.rtIn,
+.RadTreeView_Relatics .rtEdit .rtIn input {
+    font-size: 12px;
+}
+
+    .RadTreeView_Relatics .rtEdit .rtIn input {
+        line-height: 10pt;
+        height: 10pt;
+    }
+
+/* Preview */
+.PreviewTable {
+    font-family: 'Open Sans', Tahoma;
+}
+
+.Weblink {
+    font-size: 12px;
+    font-family: 'Open Sans', Tahoma;
+}
+
+img.center {
+    display: block;
+    margin: 20px auto;
+}
